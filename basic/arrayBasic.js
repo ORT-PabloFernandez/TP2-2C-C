@@ -12,7 +12,7 @@ for (let i = 0; i < nombres.length; i++) {
     console.log(element);
 }
 
-// iterar un arrar con for
+// iterar un arrar con for of 
 for (const nombre of nombres) {
     if(nombre === 'Pedro'){
         //continue;
@@ -30,6 +30,14 @@ for (const nombre of nombres) {
 //     }
 // }
 
+
+var obj = {a: 1, b: 2, c: 3};
+
+for (const prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}
+
+
 // agregar elemento al final de un array
 nombres.push('Elena');
 
@@ -44,8 +52,17 @@ nombres.unshift('Anna');
 
 let posicion = nombres.indexOf('Elena');
 
+
 // remover elementos 
-nombres.splice(2, 1);
+console.log(nombres);
+nombres.splice(2, 2);
+
+//ej funcion borrar un elemento
+function removeItemFromArr ( arr, item ) {
+    var i = arr.indexOf( item );
+    arr.splice( i, 1 );
+}
+
 
 // arrays son objetos, por tanto van por referencia
 
@@ -59,6 +76,7 @@ let numeros = [1,5,7,100,2];
 numeros.sort();
 console.log(numeros);
 
+//array de objetos 
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879 },
     { first: 'Isaac', last: 'Newton', year: 1643 },
@@ -81,7 +99,34 @@ const inventors = [
   // Ejercicio
   // Dado un array de numeros enteros, postivos, determinar el segundo mas mayor
 
-  let nums = [3,4,6,6,5,5];
+  let nums = [5,5, 3, 4, 6];
+  let sinPrimerMayor=nums.slice();
+  let primerMayor=0;
+  let mayor2=0;
+
+
+  for (let index = 0; index < sinPrimerMayor.length; index++) {
+      const element = sinPrimerMayor[index];
+      if (element>primerMayor) {
+          primerMayor=element;
+      }   
+  } 
+//   let i = sinPrimerMayor.indexOf(primerMayor);
+//   sinPrimerMayor.splice( i, 1 );
+  
+  for (let index = 0; index < sinPrimerMayor.length; index++) {
+      const element = sinPrimerMayor[index];
+      if (element != primerMayor && element>mayor2) {
+        mayor2=element;
+        
+      }
+    }
+ console.log(`El segundo mayor es : ${mayor2}`);
+
+
+  //console.log(primerMayor);
+  //console.log(sinPrimerMayor);
+
 
   // Output 5
 

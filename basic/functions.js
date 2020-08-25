@@ -5,7 +5,7 @@ function add(a,b){
     return a + b;
 }
 
-// asginando a una variable/ const 
+// asginando a una variable/ const - Asigno la función a la variable NO lo que retorna la función
 
 const square = function(x) {
     return x * x;
