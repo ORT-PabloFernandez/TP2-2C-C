@@ -3,7 +3,6 @@ function dibujarEscalera(ladrillos) {
 
     let pisos=cantidadDePisos(ladrillos);
     let base=pisos;
-    
 
     for (let index = 1; index <= pisos; index++) {
         mostrarLadrillos(index, base);
@@ -23,7 +22,6 @@ function mostrarLadrillos(cantidad, base){
     }
 
 }
-
 
 function cantidadDePisos(tamanio){
 let acumuladorLadrillosNecesarios=0;
