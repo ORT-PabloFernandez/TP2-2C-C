@@ -11,7 +11,7 @@ Determine el número de silla ocupado por el prisionero que recibirá ese carame
 
 Desarrolle la funcion saveThePrisoner que devuelva el numero de prisionero que recibe la ultima golosina.
 > function saveThePrisioner(n,m,s){
->      
+> 
 > }
 >
 saveThePrisoner tiene los siguientes parametros:
