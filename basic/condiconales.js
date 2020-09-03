@@ -15,6 +15,8 @@ console.log(0 === null);
 
 
 // valores falsos:  false, undefined, null,0, NaN, cadena vacia 
+// Valores falsos para javascript ECS6+
+// false, undefined, null, 0, NaN, '' (cadena vacia)
 
 // ej: if(0)  esto da falso 
 // if(undefined)  esto da falso 
