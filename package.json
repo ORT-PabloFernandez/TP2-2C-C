@@ -1,0 +1,25 @@
+{
+  "name": "yatp2c",
+  "version": "1.0.0",
+  "description": "Repo del cursos taller de programación C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORT-PabloFernandez/TP2-2C-C.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ORT-PabloFernandez/TP2-2C-C/issues"
+  },
+  "homepage": "https://github.com/ORT-PabloFernandez/TP2-2C-C#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "validator": "^13.1.1"
+  }
+}
